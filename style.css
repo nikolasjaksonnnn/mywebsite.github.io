@@ -195,11 +195,11 @@ body::after {
     clip-path: polygon(0 0, calc(100% - 10px) 0, 100% 10px, 100% 100%, 10px 100%, 0 calc(100% - 10px));
     transition: background 0.2s;
 }
-
+ 
 #continuebtn:hover {
     background: #c8e8f8;
 }
-
+ 
 #imoutbtn {
     padding: clamp(6px, 0.97vh, 14px) clamp(14px, 1.41vw, 36px);
     background: transparent;
@@ -214,7 +214,7 @@ body::after {
     clip-path: polygon(0 0, calc(100% - 10px) 0, 100% 10px, 100% 100%, 10px 100%, 0 calc(100% - 10px));
     transition: clip-path 0.3s ease, border-color 0.2s, color 0.2s;
 }
-
+ 
 #imoutbtn:hover {
     clip-path: polygon(0 0, 100% 0, 100% 0, 100% 100%, 0 100%, 0 100%);
     border-color: rgba(168, 216, 240, 0.6);
