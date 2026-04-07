@@ -150,6 +150,7 @@ body {
     display: flex;
     gap: clamp(20px, 2.46vw, 63px);
     margin-top: clamp(20px, 2.5vh, 36px);
+    margin-left: clamp(16px, 1.52vw, 39px);
     flex-wrap: wrap;
 }
 
