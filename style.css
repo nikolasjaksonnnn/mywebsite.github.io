@@ -1,18 +1,17 @@
-
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-  }
-  
+}
+
 body {
     background: #080c10;
     font-family: 'DM Sans', sans-serif;
-  }
+}
 
-  #logoimg {
-    width: 270px;
-    height: 81px;
+#logoimg {
+    width: clamp(120px, 10.55vw, 270px);
+    height: auto;
     display: block;
     position: absolute;
     top: 40%;
@@ -21,7 +20,7 @@ body {
 }
 
 .headbuttons a {
-    font-size: 50px;
+    font-size: clamp(20px, 1.95vw, 50px);
     font-weight: 400;
     color: #4a6a7d;
     text-decoration: none;
@@ -42,7 +41,7 @@ body {
 
 #line {
     border: none;
-    border-top: 4px solid #A8D8F0;
+    border-top: clamp(2px, 0.28vh, 4px) solid #A8D8F0;
     opacity: 0.8;
     position: absolute;
     bottom: 0;
@@ -53,108 +52,105 @@ body {
 
 .headframe {
     position: relative;
-    height: 149px;
+    height: clamp(70px, 10.35vh, 149px);
 }
 
 .headbuttons {
     display: flex;
     position: absolute;
-    gap: 145px;
-    padding-right: 122px;
+    gap: clamp(30px, 5.66vw, 145px);
+    padding-right: clamp(30px, 4.77vw, 122px);
     top: 45%;
-    transform: TranslateY(-50%);
-    right: 48px;
+    transform: translateY(-50%);
+    right: clamp(20px, 1.875vw, 48px);
 }
 
 .mainparts {
-    left: 39px;
-    top: 250px;
-    width: 939px;
-    height: 715px;
+    left: clamp(16px, 1.52vw, 39px);
+    top: clamp(120px, 17.36vh, 250px);
+    width: clamp(280px, 36.68vw, 939px);
     position: relative;
+    display: flex;
+    flex-direction: column;
 }
 
 #refurbished {
     color: #5BA3C9;
     text-decoration: none;
-    letter-spacing: 15%;
+    letter-spacing: 0.15em;
     font-family: 'DM Sans', sans-serif;
-    font-size: 32px;
+    font-size: clamp(14px, 1.25vw, 32px);
 }
 
-
 #headtext1 {
-    color: #E8F4FB
+    color: #E8F4FB;
 }
 
 #headtext2 {
-    color: #A8D8F0
+    color: #A8D8F0;
 }
 
 .headtext {
     font-family: 'Bebas Neue', sans-serif;
-    font-size: 96px;
+    font-size: clamp(40px, 3.75vw, 96px);
     letter-spacing: -0.5px;
-    line-height: 100px;
-    margin-top: 42px;
-    margin-left: 57px;
-    user-select: none; /* Chrome */
-    -webkit-touch-callout: none; /* iOS Safari */
-    -webkit-user-select: none; /* Safari, Chrome, Opera */
-    -khtml-user-select: none; /* Konqueror HTML */
-    -moz-user-select: none; /* Firefox */
-    -ms-user-select: none; /* Internet Explorer/Edge */
+    line-height: 1.04;
+    margin-top: clamp(18px, 2.92vh, 42px);
+    margin-left: clamp(20px, 2.23vw, 57px);
+    user-select: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
 }
 
 #catchtext {
-    margin-top: 40px;
-    margin-left: 39px;
+    margin-top: clamp(18px, 2.78vh, 40px);
+    margin-left: clamp(16px, 1.52vw, 39px);
     font-family: 'DM Sans', sans-serif;
-    font-size: 35px;
+    font-size: clamp(16px, 1.37vw, 35px);
     line-height: 145%;
-    width: 744px;
+    width: clamp(240px, 29.06vw, 744px);
     color: #4A6A7D;
     pointer-events: none;
 }
 
 .centerdesign {
-    width: 780px;
-    height: 770px;
-    top: 270px;
-    left: 1143px;
+    width: clamp(280px, 30.47vw, 780px);
+    height: clamp(280px, 53.47vh, 770px);
+    top: clamp(120px, 18.75vh, 270px);
+    left: clamp(500px, 44.65vw, 1143px);
     position: absolute;
 }
 
 #caseimg {
-    left: 254px;
-    top: 165px;
-    width: 228px;
-    height: 358px;
+    left: clamp(80px, 9.92vw, 254px);
+    top: clamp(50px, 11.46vh, 165px);
+    width: clamp(90px, 8.91vw, 228px);
+    height: auto;
     display: block;
-    position: absolute
+    position: absolute;
 }
 
 #centertext {
     position: absolute;
     color: #5695BA;
-    font-size: 30px;
+    font-size: clamp(13px, 1.17vw, 30px);
     font-family: 'DM Sans', sans-serif;
-    width: 723px;
+    width: 93%;
     height: auto;
-    top: 570px;
-    left: 25px;
+    top: clamp(280px, 39.58vh, 570px);
+    left: clamp(10px, 0.98vw, 25px);
     text-align: center;
     pointer-events: none;
 }
 
 #buttons {
     display: flex;
-    gap: 63px;
-}
-
-.mainparts {
-    display: flex;
-    flex-direction: column;
+    gap: clamp(20px, 2.46vw, 63px);
+    margin-top: clamp(20px, 2.5vh, 36px);
+    flex-wrap: wrap;
 }
 
 body::before {
@@ -186,20 +182,17 @@ body::after {
 }
 
 #continuebtn {
-    position: absolute;
-    padding: 14px 36px;
+    padding: clamp(6px, 0.97vh, 14px) clamp(14px, 1.41vw, 36px);
     background: #a8d8f0;
     color: #080c10;
     font-family: 'DM Sans', sans-serif;
-    font-size: 40px;
+    font-size: clamp(16px, 1.56vw, 40px);
     font-weight: 500;
     letter-spacing: 0.12em;
     text-transform: uppercase;
     border: none;
     cursor: pointer;
     clip-path: polygon(0 0, calc(100% - 10px) 0, 100% 10px, 100% 100%, 10px 100%, 0 calc(100% - 10px));
-    top: 520px;
-    left: 60px;
     transition: background 0.2s;
 }
 
@@ -208,20 +201,17 @@ body::after {
 }
 
 #imoutbtn {
-    position: absolute;
-    padding: 14px 36px;
+    padding: clamp(6px, 0.97vh, 14px) clamp(14px, 1.41vw, 36px);
     background: transparent;
     color: #4a6a7d;
     font-family: 'DM Sans', sans-serif;
-    font-size: 40px;
+    font-size: clamp(16px, 1.56vw, 40px);
     font-weight: 400;
     letter-spacing: 0.12em;
     text-transform: uppercase;
     border: 1px solid rgba(168, 216, 240, 0.12);
     cursor: pointer;
     clip-path: polygon(0 0, calc(100% - 10px) 0, 100% 10px, 100% 100%, 10px 100%, 0 calc(100% - 10px));
-    top: 520px;
-    left: 450px;
     transition: clip-path 0.3s ease, border-color 0.2s, color 0.2s;
 }
 
